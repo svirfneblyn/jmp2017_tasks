@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PoundMain {
-
+/*Feel pound with ducks*/
     public static void main(String[] args) {
         /*List with duck types*/
         List<String> duckTypekList = new ArrayList<>();
