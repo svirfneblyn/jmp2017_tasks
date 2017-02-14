@@ -26,7 +26,7 @@ public class PoundMain {
         System.out.println("Ducks ready and there is the list of ducks and their abilities :");
         /*Ducks sweem in the pound and demonstrate abilities*/
         for (Duck duckType : duckCreatsList) {
-            duckType.abilitysDemo();
+            duckType.showAbilitys();
 
         }
     }

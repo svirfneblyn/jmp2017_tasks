@@ -1,24 +1,29 @@
 package concreteDucks;
 
-import Service.AbilityFabrique;
+import Service.AbilityFactory;
 import model.Duck;
 
 /**
  * Created by User on 2/11/2017.
  */
 public class ToyDuck extends Duck {
-    /*Uses common ability and one own from Singelton fabrique */
-    @Override
+
+    private AbilityFactory af;
+    public ToyDuck(AbilityFactory af) {
+        super();
+        this.af = af;
+    }
+
     public void swim() {
-        super.swim();
+        af.getAbility("swim").execute();
     }
 
     public void sing() {
-        AbilityFabrique.getInstance().sing();
+        af.getAbility("sing").execute();
     }
 
     @Override
-    public void abilitysDemo() {
+    public void showAbilitys() {
         System.out.println("ToyDuck abilitys : ");
         swim();
         sing();
