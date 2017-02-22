@@ -1,3 +1,4 @@
+//test
 import Service.DuckFactory;
 import model.Duck;
 
@@ -5,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PoundMain {
-
+/*Feel pound with ducks*/
     public static void main(String[] args) {
         /*List with duck types*/
         List<String> duckTypekList = new ArrayList<>();
@@ -25,7 +26,7 @@ public class PoundMain {
         System.out.println("Ducks ready and there is the list of ducks and their abilities :");
         /*Ducks sweem in the pound and demonstrate abilities*/
         for (Duck duckType : duckCreatsList) {
-            duckType.abilitysDemo();
+            duckType.showAbilitys();
 
         }
     }
